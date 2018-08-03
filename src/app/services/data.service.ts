@@ -13,7 +13,7 @@ export class DataService {
 
   getPosts(){
     return this.http.get('http://jsonplaceholder.typicode.com/posts')
-      .map(res => res.json());
+.pipe(map(res => res.json()));
   }
 
 
